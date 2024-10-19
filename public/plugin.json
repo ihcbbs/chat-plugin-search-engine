@@ -5,9 +5,9 @@
   "manifest": "https://raw.githubusercontent.com/ihcbbs/chat-plugin-search-engine/main/public/manifest.json",
   "meta": {
     "avatar": "🔍",
-    "description": "Google search engine via Serper.dev free API (2500x🆓/month)",
+    "description": "Google search engine",
     "tags": ["web", "search"],
-    "title": "Search Google via Serper"
+    "title": "Search Google"
   },
   "schemaVersion": 1
 }
