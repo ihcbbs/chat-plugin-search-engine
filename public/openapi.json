@@ -1,10 +1,15 @@
 {
   "components": {
     "securitySchemes": {
-      "apiAuth": {
+      "http": {
         "type": "apiKey",
-        "name": "X-API-KEY",
-        "in": "header"
+        "name": "apikey",
+        "in": "query"
+      },    
+      "http": {
+        "type": "id",
+        "name": "cx",
+        "in": "query"
       }
     }
   },
@@ -14,11 +19,29 @@
   },
   "openapi": "3.0.0",
   "paths": {
-    "/search": {
-      "post": {
+    "/customsearch/v1": {
+      "get": {
         "summary": "Search Google and return top 10 results",
         "operationId": "searchGoogle",
         "parameters": [
+          {
+            "in": "query",
+            "name": "key",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "apikey"
+          },
+           {
+            "in": "query",
+            "name": "cx",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "cse id"
+          },
           {
             "in": "query",
             "name": "q",
@@ -84,7 +107,7 @@
   ],
   "servers": [
     {
-      "url": "https://google.serper.dev"
+      "url": "https://www.googleapis.com"
     }
   ]
 }
