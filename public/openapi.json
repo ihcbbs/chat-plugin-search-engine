@@ -1,11 +1,11 @@
 {
   "components": {
     "securitySchemes": {
-      "http": {
+      "apiAuth": {
         "type": "apiKey",
         "name": "apikey",
         "in": "query"
-      },    
+      },
       "http": {
         "type": "id",
         "name": "cx",
@@ -33,7 +33,7 @@
             "required": true,
             "description": "apikey"
           },
-           {
+          {
             "in": "query",
             "name": "cx",
             "schema": {
