@@ -1,7 +1,7 @@
 {
   "author": "",
   "homepage": "https://github.com/ihcbbs/chat-plugin-search-engine",
-  "identifier": "search-engine-serper-ihcbbs",
+  "identifier": "search-engine-cse-ihcbbs",
   "manifest": "https://raw.githubusercontent.com/ihcbbs/chat-plugin-search-engine/main/public/manifest.json",
   "meta": {
     "avatar": "🔍",
